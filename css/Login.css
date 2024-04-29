@@ -1,0 +1,198 @@
+/* General css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: url(../images/landing.jpg);
+    background-size: cover;
+}
+
+:root {
+    --maincolor: #f44336;
+    --subcolor: #222;
+}
+p.error{
+    display: block;
+    background-color: #ff000050;
+    margin: 10px auto;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Login page */
+.login{
+    padding-top: 70px;
+}
+.login .photo{
+    display: flex;
+    justify-content: center;
+}
+.login .photo i {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  font-size: 100px;
+  line-height: 130px;
+  text-align: center;
+  color: var(--subcolor);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  border: 5px solid var(--subcolor);
+}
+.login .photo i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.login .container{
+    padding: 30px 50px;
+    margin: 20px auto;
+    background-color: var(--subcolor);
+    position: relative;
+    border: 1px solid white;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.login .container::before{
+    content: "";
+    border-style: solid;
+    border-width: 15px;
+    border-color: transparent transparent var(--subcolor) transparent;
+    position: absolute;
+    left: 50%;
+    top: -28px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.login .container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.login .container form input:not(.not){
+    width: 360px;
+    padding: 10px 15px;
+    background-color: #fff;
+    outline: none;
+    position: relative;
+    border: 1px solid white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    color: var(--subcolor);
+    font-size:18px ;
+}
+.login .info{
+    margin-top: 20px;
+    width: 100%;
+    justify-content:space-between;
+}
+.login form input[type="submit"]{
+    width: 400px !important;
+    transition: .5s;
+    color: var(--subcolor);
+}
+.login form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: var(--maincolor);
+    border-color:var(--maincolor) ;
+    color: #fff;
+}
+.login .icon{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 40px;
+    margin-bottom: 15px;
+
+}
+.login .icon i{
+    color: #494949;
+    border:1px solid white;
+    background-color: var(--subcolor);
+    border-right: 0;
+    width: 40px;
+    text-align: center;
+    height: 100%;
+    line-height:40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.login input::placeholder {
+    color: #494949;
+    /* padding: 20px; */
+}
+.login select{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    background-color: var(--subcolor);
+    outline: none;
+    border: 1px solid white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color: #494949;
+}
+
+
+.register-link{
+    display: block;
+}
+
+.register-link a{
+    font-size: 18px;
+    display: inline-block;
+    transition: .5s;
+}
+.register-link a:hover{
+    color: var(--maincolor);
+    transform: scale(1.05);
+}
+.for-pass{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size:18px ;
+
+}

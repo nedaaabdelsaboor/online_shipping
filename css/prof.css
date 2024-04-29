@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --maincolor: #f44336;
+    --subcolor: #222;
+  }
+li {
+    list-style: none;
+  }
+.content a{
+    color:#003cffb0 ;
+    text-shadow: 0 2px 2px rgb(0, 0, 0,0.5);
+    font-weight: bold;
+}
+img {
+    border-radius: 50%;
+    box-shadow :  5px 10px rgba(53, 53, 53, 0.349);
+  }
+.container-form{
+    display: flex;
+    align-items: center;
+    padding: 0 250px;
+    justify-content: center;
+    height: 80vh;
+    font-family: cursive;
+
+}
+/* body{
+    background-image: url(../images/landing.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+/* header */
+.container {
+    /* padding: 0 15px; */
+    margin: 0 auto;
+    font-family: "PT Sans", sans-serif;
+
+  }
+  
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 960px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /*end of general css*/
+  
+  header {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    z-index: 5;
+    transition: Transform 0.5s;
+    transition: background-color 1s;
+    transition: .5s;
+  }
+  header .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+  }
+  header .container a.logo ,
+  footer a.logo {
+    display: block;
+    height: 100%;
+    background-color: var(--subcolor);
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  header .container a span.first ,
+  footer a span.first {
+    color: #fff;
+    font-size: 50px;
+  }
+  header .container a span.last ,
+  footer a span.last  {
+    transform: translateY(6px);
+    background-color: #f44336;
+  }
+  header .container nav {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+  }
+  header .container nav ul.links {
+    display: flex;
+  }
+  header .container nav ul li.link a {
+    padding: 20px;
+    display: block;
+    color: #000;
+    transition: color 0.5s;
+    transition: border-bottom 0.5s;
+    font-size: 18px;
+    font-weight: 500;
+    height: 80px;
+    line-height: 40px;
+    transition: .5s;
+  }
+  header .container nav ul li.link a:hover {
+    background-color: var(--subcolor);
+    color: var(--maincolor);
+  }
+  /* header .container nav ul li.link.active a {
+    color: var(--maincolor);
+    border-bottom: 1px solid var(--maincolor);
+  }
+  header .container nav ul li.link a:hover {
+    color: var(--maincolor);
+    border-bottom: 1px solid var(--maincolor);
+  } */
+  header .container nav span {
+    display: block;
+    width: 1px;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    background-color: #000000;
+  }
+  header .container nav .home-ico-search {
+    color: #fff;
+    font-size: 22px;
+    padding-left: 20px;
+  }
+  .datalist {
+    visibility: hidden;
+    opacity: 0;
+  }
+  ul.block {
+    display: flex;
+  }
+/* home */
+.content{
+    text-align: center;   
+}
+.content p{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+.content h1,h2{
+    text-transform: capitalize;
+}
+.content h2{
+   font-size: 35px;
+   font-family: cursive;
+   
+}
+.content h2 span,b{
+    color: #eee;
+    border-radius: 3px
+}
+
+.form_cont .form{
+    background-color: white;
+    border-radius: 0;
+    text-align: center;
+    padding: 20px;
+    width: 600px;
+    
+}
+.form h2{
+    margin-bottom: 20px;
+}
+.form_cont .content div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.form_cont p{
+    margin-top: 5px;
+}
+
+.form_cont h2::first-letter{
+    color: red;
+}
+
+.form_cont a:hover{
+    text-decoration: underline;
+}
+p.title::first-line{
+    color: red;
+}
+.content img{
+    margin-bottom: 20px;
+}
